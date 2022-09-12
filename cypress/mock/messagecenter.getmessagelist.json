@@ -1,0 +1,82 @@
+{
+  "status": {
+    "code": 1,
+    "message": "操作成功",
+    "create_at": "2019-07-26 10:22:32",
+    "api_time_consuming": "465.32392501831毫秒",
+    "function_time_consuming": "173.65503311157毫秒"
+  },
+  "data": {
+    "total": "32748",
+    "list": [
+      {
+        "id": "116218",
+        "member_id": "27541",
+        "message_id": "116098",
+        "notice_type": "服务通知",
+        "read_flag": "0",
+        "status": "0",
+        "switch_email": "1",
+        "switch_sms": "1",
+        "msg_title": "TCP安全加速到期通知",
+        "notice_time": "2019-06-28 17:24:04"
+      },
+      {
+        "id": "116212",
+        "member_id": "27541",
+        "message_id": "116095",
+        "notice_type": "服务通知",
+        "read_flag": "0",
+        "status": "0",
+        "switch_email": "1",
+        "switch_sms": "1",
+        "msg_title": "TCP安全加速到期通知",
+        "notice_time": "2019-06-28 16:14:02"
+      },
+      {
+        "id": "116209",
+        "member_id": "27541",
+        "message_id": "116092",
+        "notice_type": "服务通知",
+        "read_flag": "0",
+        "status": "0",
+        "switch_email": "1",
+        "switch_sms": "1",
+        "msg_title": "TCP安全加速即将到期通知",
+        "notice_time": "2019-06-27 17:24:02"
+      },
+      {
+        "id": "116203",
+        "member_id": "27541",
+        "message_id": "116089",
+        "notice_type": "服务通知",
+        "read_flag": "0",
+        "status": "0",
+        "switch_email": "1",
+        "switch_sms": "1",
+        "msg_title": "TCP安全加速即将到期通知",
+        "notice_time": "2019-06-27 16:14:01"
+      },
+      {
+        "id": "116200",
+        "member_id": "27541",
+        "message_id": "116086",
+        "notice_type": "服务通知",
+        "read_flag": "0",
+        "status": "0",
+        "switch_email": "1",
+        "switch_sms": "1",
+        "msg_title": "TCP安全加速即将到期通知",
+        "notice_time": "2019-06-25 17:23:52"
+      }
+    ],
+    "unread_list": {
+      "total": 31051,
+      "service_notice": "767",
+      "security_notice": "30284",
+      "fault_notice": 0,
+      "event_notice": 0,
+      "account_notice": 0
+    }
+  }
+}

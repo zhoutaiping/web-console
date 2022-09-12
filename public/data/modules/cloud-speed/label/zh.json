@@ -1,0 +1,280 @@
+{
+  "SWITCH": [
+    {
+      "label": "开启",
+      "value": "on"
+    },
+    {
+      "label": "关闭",
+      "value": "off"
+    }
+  ],
+  "PROTOCOL_TYPE": [
+    {
+      "label": "HTTP",
+      "value": 0
+    },
+    {
+      "label": "HTTPS",
+      "value": 1
+    }
+  ],
+  "originHostOptions": [
+    {
+      "value": "default",
+      "label": "默认"
+    },
+    {
+      "value": "diy",
+      "label": "自定义"
+    }
+  ],
+  "SOURCE_PROTOCOL": [
+    {
+      "value": 0,
+      "label": "HTTP"
+    },
+    {
+      "value": 1,
+      "label": "HTTPS"
+    },
+    {
+      "value": 2,
+      "label": "协议跟随"
+    }
+  ],
+  "IP_VIEW": [
+    {
+      "label": "主线路",
+      "value": "primary"
+    },
+    {
+      "label": "备线路",
+      "value": "backup"
+    }
+  ],
+  "PORT_80443": [
+    {
+      "label": "80",
+      "value": "80"
+    },
+    {
+      "label": "443",
+      "value": "443"
+    }
+  ],
+  "BALANCING_TYPE": [
+    {
+      "label": "轮询",
+      "value": 1
+    },
+    {
+      "label": "IP哈希",
+      "value": 0
+    },
+    {
+      "label": "COOKIE粘住",
+      "value": 2
+    }
+  ],
+  "RETURN_SETTING": [
+    {
+      "label": "回源到IP",
+      "value": 0
+    },
+    {
+      "label": "回源到域名",
+      "value": 1
+    }
+  ],
+  "TIME_GRANULARITY": [
+    {
+      "label": "1分钟",
+      "value": "1m"
+    },
+    {
+      "label": "5分钟",
+      "value": "5m"
+    }
+  ],
+  "HEADER_LIST": [
+    {
+      "label": "Cache-Control",
+      "value": "Cache-Control",
+      "tips": "指定客户程序请求和响应遵循的缓存机制"
+    },
+    {
+      "label": "Content-Disposition",
+      "value": "Content-Disposition",
+      "tips": "指定客户程序响应对象时激活文件下载设置默认的文件名"
+    },
+    {
+      "label": "Content-Language",
+      "value": "Content-Language",
+      "tips": "指定客户程序响应对象的语言"
+    },
+    {
+      "label": "Expires",
+      "value": "Expires",
+      "tips": "指定客户程序响应对象的过期时间"
+    },
+    {
+      "label": "Access-Control-Allow-Origin",
+      "value": "Access-Control-Allow-Origin",
+      "tips": "指定允许的跨域请求的来源"
+    },
+    {
+      "label": "Access-Control-Allow-Methods",
+      "value": "Access-Control-Allow-Methods",
+      "tips": "指定允许的跨域请求方法"
+    },
+    {
+      "label": "Access-Control-Allow-Credentials",
+      "value": "Access-Control-Allow-Credentials",
+      "tips": "跨域请求时是否带Cookie的设置"
+    },
+    {
+      "label": "Access-Control-Max-Age",
+      "value": "Access-Control-Max-Age",
+      "tips": "指定客户程序对特定资源的预取请求返回结果的缓存时间"
+    },
+    {
+      "label": "Access-Control-Expose-Headers",
+      "value": "Access-Control-Expose-Headers",
+      "tips": "指定允许访问的自定义头信息"
+    },
+    {
+      "label": "自定义",
+      "value": "custom",
+      "tips": "请输入响应头匹配内容"
+    }
+  ],
+  "HTTP2_HTTPS": [
+    {
+      "label": "关闭",
+      "value": "off"
+    },
+    {
+      "label": "全量跳转",
+      "value": "all"
+    },
+    {
+      "label": "指定浏览器跳转",
+      "value": "special"
+    }
+  ],
+  "SETTINS_ITEM": {
+    "DomainNode": {
+      "title": "域名节点状态",
+      "desc": "修改网站域名节点状态"
+    },
+    "ProtectedMode": {
+      "title": "接入方式",
+      "desc": "修改网站接入方式"
+    },
+    "Source": {
+      "title": "源站设置",
+      "desc": "指定回源地址和监听端口，支持回源到IP及域名"
+    },
+    "Slice": {
+      "title": "Range 回源",
+      "desc": "需要源站支持Range请求，开启后可以按块缓存，按需回源，提高缓存命中率和响应速度"
+    },
+    "BackSourceHost": {
+      "title": "回源HOST",
+      "desc": "自定义性能优化节点取源站数据时所需访问的 WEB 服务器域名"
+    },
+    "BackSourceSni": {
+      "title": "回源 SNI",
+      "desc": "当业务源站 IP 绑定多个域名且 CDN 节点以 HTTPS 协议访问源站时，必须指定访问的具体域名"
+    },
+    "CdnCache": {
+      "title": "高级缓存",
+      "desc": "__companyEN__优质节点网络，智能缓存网站内容极大提高网站访问速度"
+    },
+    "WebP": {
+      "title": "WebP自适应",
+      "desc": "性能优化智能判断浏览器是否支持 WebP，来决定返回 WebP 格式图片还是原图，从而减少网络传输消耗，优化图片渲染速度。此功能需要相应的资源启用了缓存"
+    },
+    "Mobile": {
+      "title": "移动端跳转",
+      "desc": "将来自移动终端的请求自动重定向到指定的URL"
+    },
+    "Browser": {
+      "title": "浏览器缓存优化",
+      "desc": "通过移除响应头中 Entity Tags优化前端性能"
+    },
+    "Https": {
+      "title": "HTTPS",
+      "desc": "提供 SSL 服务"
+    },
+    "WebSocket": {
+      "title": "WebSocket",
+      "desc": "开启 WebSocket 服务"
+    },
+    "HttpHeader": {
+      "title": "自定义 HTTP 响应头",
+      "desc": "支持您自定义 HTTP 响应头中的 header 信息"
+    },
+    "HttpSourceHeader": {
+      "title": "自定义 HTTP 回源请求头",
+      "desc": "支持您自定义节点至源站的 HTTP 请求头中的 header 信息"
+    },
+    "Page500": {
+      "title": "500 页面定制",
+      "desc": "定制专属 500 页面，不开启时默认使用源站错误页面"
+    },
+    "Page502": {
+      "title": "502 / 504 页面定制",
+      "desc": "定制专属 502 / 504 页面，不开启时默认使用 __companyEN__ 提供的错误页面"
+    },
+    "Page404": {
+      "title": "公益 404",
+      "desc": "启用公益 404 页面，帮助孩子回家"
+    },
+    "CloudWaf": {
+      "title": "漏洞攻击防护",
+      "desc": "基于大数据人工智能攻击识别引擎，可防御SQL注入、XSS攻击、恶意扫描等各种漏洞攻击同时通过访客行为和安全大数据分析，深层次拦截WebShell"
+    },
+    "WebHoney": {
+      "title": "Web蜜网",
+      "desc": "依多年攻防实战经验，推出了针对高风险攻击者使用的工具及其攻击手法的诱捕技术，同时支持多种实施部署方案"
+    },
+    "WafIntercept": {
+      "title": "WAF拦截页面定制",
+      "desc": "定制专属WAF拦截页面，不开启是默认使用Web应用防火墙提供的拦截页面"
+    },
+    "ContentReplace": {
+      "title": "内容替换",
+      "desc": "过滤和替换敏感信息、反动言论和淫秽内容"
+    },
+    "DefenseRefer": {
+      "title": "防盗链",
+      "desc": "保护系统资源不被外部盗用"
+    },
+    "ZoneLimit": {
+      "title": "区域屏蔽",
+      "desc": "可根据业务需求，允许或禁止特定区域的终端用户对业务资源的访问"
+    },
+    "DefenseCC": {
+      "title": "防 CC",
+      "desc": "有效防止 CC 攻击。YUNDUN 全局默认对搜索引擎放行"
+    },
+    "SourceSafe": {
+      "title": "源站保护",
+      "desc": "根据源站处理性能，设置一定时间内回源请求次数限制，配置后超出的请求将被丢弃，可有效防止回源请求过大导致服务器过载"
+    },
+    "Bot": {
+      "title": "Bot 行为管理",
+      "desc": "使用 ATD 智能引擎及威胁情报库，甄别分类友好及恶意机器人程序，可按需使用 精准访问控制引擎 采取针对性的流量管理策略"
+    },
+    "WAF": {
+      "title": "精准访问控制",
+      "desc": "针对七层提供精准化访问控制台，可以根据业务情况定制专有防护策略"
+    },
+    "WebSnapshot": {
+      "title": "网站快照",
+      "desc": "分区域、分时间对外提供快照访问控制，强烈建议在敏感时期启用网站快照访问控制，可100%保障内容安全。"
+    }
+  }
+}

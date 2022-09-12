@@ -1,0 +1,21 @@
+{
+  "id": "27541",
+  "email": "hu*****ke@yundun.com",
+  "mobile": "176****0472",
+  "qq": "343443",
+  "addtime": "2017-06-14 14:09:36",
+  "balance": 9993077613.63,
+  "online_balance_wx": "3077613.63",
+  "online_balance_alipay": "9990000000.00",
+  "offline_balance_wx": "0.00",
+  "offline_balance_alipay": "943.00",
+  "offline_balance_bank": "7000.00",
+  "baishan_online_balance_wx": "0.00",
+  "baishan_online_balance_alipay": "0.00",
+  "is_jgb_account": "1",
+  "account_type": "1",
+  "bindMobile": 1,
+  "bindEmail": 1,
+  "weiXin": [],
+  "loginSecondVerifyStatus": 0
+}

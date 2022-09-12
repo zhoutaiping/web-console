@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+@import './element-ui/adapt.scss';
+@import './element-ui/variables.scss';
+@import './modules/base.scss';
+@import './modules/iconfont.scss';
+@import './modules/user.scss';
+
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: $--color-primary;
+
+  &[disabled]{
+    color: #c0c4cc;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.ya-yun-view-main {
+  color: $--color-primary;
+}

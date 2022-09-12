@@ -1,0 +1,285 @@
+[
+  {
+    "moduleName": "global",
+    "moduleTitle": "公共模块",
+    "childs": [
+      {
+        "accessTitle": "初始化消息中心账户相关数据",
+        "accessName": "messagecenter.center.initializeMemberMessageCenterSetting",
+        "pathName": "messagecenter.center.initializeMemberMessageCenterSetting",
+        "apis": [
+          "GET /api/V4/messagecenter.center.initializeMemberMessageCenterSetting"
+        ]
+      },
+      {
+        "accessTitle": "获取子账户信息",
+        "accessName": "permission.get.subUserInfo",
+        "pathName": "permission.get.subUserInfo",
+        "apis": [
+          "GET /api/V4/permission.get.subUserInfo"
+        ]
+      },
+      {
+        "accessTitle": "获取权限",
+        "accessName": "permission.login.subUser",
+        "pathName": "permission.login.subUser",
+        "apis": []
+      },
+      {
+        "accessTitle": "获取模块列表",
+        "accessName": "permission.get.permissionModuleNames",
+        "pathName": "permission.get.permissionModuleNames",
+        "apis": [
+          "GET /api/V4/permission.get.permissionModuleNames"
+        ]
+      },
+      {
+        "accessTitle": "地域信息",
+        "accessName": "share_data.region",
+        "pathName": "share_data.region",
+        "apis": [
+          "GET /api/V4/share_data.region"
+        ]
+      },
+      {
+        "accessTitle": "首页",
+        "accessName": "overview.home",
+        "pathName": "overview.home",
+        "apis": [
+          "POST /api/V4/stati.data.get",
+          "GET /api/V4/messagecenter.home.getmessagelist",
+          "GET /api/V4/overview.home.getbaseapplicationinfo",
+          "GET /api/V4/overview.home.getbigdata",
+          "GET /api/V4/overview.home.getsmsandcdn",
+          "GET /api/V4/overview.home.gettjkdinfo",
+          "GET /api/V4/overview.home.getUnread.message.number",
+          "GET /api/V4/permission.get.info",
+          "GET /api/V4/finance.recharge.getMemberBalance"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleName": "cloud-resolving",
+    "moduleTitle": "DNS安全加速",
+    "childs": [
+      {
+        "accessTitle": "域名列表",
+        "accessName": "cloud-resolving.domainList",
+        "pathName": "cloud-resolving.router.domainList",
+        "apis": [
+          "GET /api/V4/CloudDns.Domain.DnsDomain.list",
+          "POST /api/V4/CloudDns.Domain.DnsDomain.batchExport",
+          "GET /api/V4/cloud.dns.domain.group.all.list"
+        ]
+      },
+      {
+        "accessTitle": "添加域名",
+        "accessName": "cloud-resolving.addDomain",
+        "pathName": "cloud-resolving.router.domainList",
+        "apis": [
+          "POST /api/V4/CloudDns.Domain.DnsDomain.batchAdd",
+          "POST /api/V4/CloudDns.Domain.DnsDomain.add"
+        ]
+      },
+      {
+        "accessTitle": "编辑域名",
+        "accessName": "cloud-resolving.editDomain",
+        "pathName": "cloud-resolving.router.domainList",
+        "apis": [
+          "GET /api/V4/CloudDns.DomainRecords.list",
+          "POST /api/V4/CloudDns.DomainRecords.add",
+          "POST /api/V4/CloudDns.DomainRecords.edit",
+          "POST /api/V4/CloudDns.DomainRecords.batchOpen",
+          "POST /api/V4/CloudDns.DomainRecords.batchPause",
+          "POST /api/V4/CloudDns.DomainRecords.batchDelete",
+          "POST /api/V4/CloudDns.DomainRecords.delete",
+          "GET /api/V4/CloudDns.DomainRecords.importRecord2CloudSpeed",
+          "POST /api/V4/CloudDns.DomainRecords.edit.remark",
+          "GET /api/V4/CloudDns.DomainRecords.getDomainDns",
+          "POST /api/V4/CloudDns.Member.GroupList"
+        ]
+      },
+      {
+        "accessTitle": "删除域名",
+        "accessName": "cloud-resolving.deleteDomain",
+        "pathName": "cloud-resolving.router.domainList",
+        "apis": [
+          "POST /api/V4/CloudDns.Domain.DnsDomain.batchDelete"
+        ]
+      },
+      {
+        "accessTitle": "查看统计",
+        "accessName": "cloud-resolving.statisticsDomain",
+        "pathName": "cloud-resolving.router.domainList",
+        "apis": [
+          "GET /api/V4/CloudDns.Domain.DnsDomain.DnsStat"
+        ]
+      },
+      {
+        "accessTitle": "任务列表",
+        "accessName": "cloud-resolving.jobList",
+        "pathName": "cloud-resolving.router.jobList",
+        "apis": [
+          "GET /api/V4/CloudDns.DomainRecords.batchList",
+          "GET /api/V4/CloudDns.DomainRecords.batchDetail"
+        ]
+      },
+      {
+        "accessTitle": "操作记录",
+        "accessName": "cloud-resolving.operateLog",
+        "pathName": "cloud-resolving.router.operateLog",
+        "apis": [
+          "GET /agw/oplog/console/user/oplog/list"
+        ]
+      },
+      {
+        "accessTitle": "分组管理",
+        "accessName": "cloud-resolving.domainGroup",
+        "pathName": "cloud-resolving.router.domainGroup",
+        "apis": [
+          "GET /api/V4/cloud.dns.domain.group.list",
+          "POST /api/V4/cloud.dns.domain.group.del",
+          "POST /api/V4/cloud.dns.domain.group.domain.save",
+          "POST /api/V4/cloud.dns.domain.group.domain.list",
+          "POST /api/V4/cloud.dns.domain.group.undistributed.domain.list"
+        ]
+      },
+      {
+        "accessTitle": "导入记录",
+        "accessName": "cloud-resolving.importLog",
+        "pathName": "cloud-resolving.router.domainList__importLog",
+        "apis": [
+          "POST /api/V4/CloudDns.DomainRecords.batchImport"
+        ]
+      },
+      {
+        "accessTitle": "控制台",
+        "accessName": "domainList/console/:id/:member_id/record",
+        "pathName": "cloud-resolving.router.domainList__console__record",
+        "apis": [
+          "GET /api/V4/CloudDns.Domain.DnsDomain.info",
+          "GET /api/V4/CloudDns.DomainRecords.getDomainDns",
+          "GET /api/V4/CloudDns.Member.GroupList",
+          "GET /api/V4/CloudDns.DomainRecords.list",
+          "GET /api/V4/CloudDns.Member.Line.getMemberLines"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleName": "cloud-speed",
+    "moduleTitle": "WEB安全加速",
+    "childs": [
+      {
+        "accessTitle": "业务列表",
+        "accessName": "cloud-speed.businessList",
+        "pathName": "cloud-speed.router.businessList",
+        "apis": [
+          "GET /api/V4/member.product.plan",
+          "GET /api/V4/web.domain.group.list",
+          "GET /api/V4/member.product.plan",
+          "GET /api/V4/member.plan.actions",
+          "GET /api/V4/Web.Domain.list",
+          "GET /api/V4/Web.Domain.check.cname.use.yundun",
+          "GET /api/V4/member.set.info.console",
+          "GET /api/V4/web.domain.group.list",
+          "PUT /api/V4/web.domain.set.save",
+          "GET /api/Web.Domain.Info",
+          "GET /api/V4/firewall.pagecfg.hwws",
+          "GET /api/V4/user.ip.list",
+          "GET /api/V4/Web.Domain.listenPort.list",
+          "GET /api/V4/web.domain.set.get",
+          "PUT /api/V4/Web.Domain.listenPort.edit",
+          "PUT /api/web.domain.set.save",
+          "GET /api/V4/firewall.policyGroup.get_domainid",
+          "GET /api/V4/replaceMirror.mirror.list",
+          "POST /api/V4/replaceMirror.mirror.add",
+          "POST /api/V4/replaceMirror.mirror.refresh",
+          "DELETE /api/V4/replaceMirror.mirror.del",
+          "POST /api/V4/replaceMirror.mirror.configure",
+          "DELETE /api/V4/firewall.policy.stats_domainid",
+          "DELETE /api/V4/firewall.policyGroup.sort",
+          "DELETE /api/V4/firewall.policyGroup.save"
+        ]
+      },
+      {
+        "accessTitle": "预热更新",
+        "accessName": "cloud-speed.preUpdate",
+        "pathName": "cloud-speed.router.preUpdate",
+        "apis": [
+          "PUT /api/V4/Web.Domain.DashBoard.saveCache",
+          "GET /api/V4/Web.Domain.DashBoard.getCache",
+          "GET /api/V4/Web.Domain.DashBoard.get.preheat.cache.list",
+          "POST /api/V4/Web.Domain.DashBoard.save.preheat.cache"
+        ]
+      },
+      {
+        "accessTitle": "配置模板",
+        "accessName": "cloud-speed.configTemplates",
+        "pathName": "cloud-speed.router.configTemplates",
+        "apis": [
+          "POST /api/V4/cdntpl.delete",
+          "GET /api/V4/cdntpl.list",
+          "GET /api/V4/web.domain.list.short",
+          "POST /api/V4/cdntpl.domain.bind",
+          "POST /api/V4/cdntpl.domain.unbind",
+          "GET /api/V4/cdntpl.oplog",
+          "POST /api/V4/cdntpl.info"
+        ]
+      },
+      {
+        "accessTitle": "证书管理",
+        "accessName": "cloud-speed.certificateList",
+        "pathName": "cloud-speed.router.certificateList",
+        "apis": [
+          "GET /api/V4/Web.ca.self.list",
+          "DELETE /api/V4/Web.ca.self.del",
+          "POST /api/V4/Web.ca.self.editcaname",
+          "POST /api/V4/Web.ca.batch.operat",
+          "GET /api/V4/Web.ca.self.export",
+          "POST /api/V4/Web.ca.apply.add",
+          "POST /api/V4/Web.ca.apply.add",
+          "GET /api/V4/web.domain.group.list",
+          "GET /api/V4/Web.ca.group.domain.list",
+          "POST /api/V4/Web.ca.text.save",
+          "POST /api/V4/Web.ca.self.add",
+          "POST /api/V4/Web.ca.info.edit"
+        ]
+      },
+      {
+        "accessTitle": "任务列表",
+        "accessName": "cloud-speed.taskList",
+        "pathName": "cloud-speed.router.taskList",
+        "apis": [
+          "GET /agw/batch/console/v1/task/list",
+          "GET /agw/batch/console/v1/subtask/info",
+          "GET /agw/batch/console/v1/subtask/list",
+          "GET /api/V4/Web.Domain.DashBoard.cache.clean.list",
+          "GET /api/V4/Web.Domain.DashBoard.get.preheat.cache.list"
+        ]
+      },
+      {
+        "accessTitle": "统计报表",
+        "accessName": "cloud-speed.statisticsReport",
+        "pathName": "cloud-speed.router.statisticsReport",
+        "apis": [
+          "POST /api/V4/stati.data.get",
+          "GET /api/V4/cloudsafe.hwws.domain.list",
+          "GET /api/V4/Web.All.Domains",
+          "GET /api/V4/firewall.pagecfg",
+          "GET /api/V4/user.ip.list"
+        ]
+      },
+      {
+        "accessTitle": "操作记录",
+        "accessName": "cloud-speed.operateLog",
+        "pathName": "cloud-speed.router.operateLog",
+        "apis": [
+          "GET /api/agw/oplog/console/user/oplog/list",
+          "GET /api/V4/Web.Domain.batch.log.search"
+        ]
+      }
+    ]
+  }
+]

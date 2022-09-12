@@ -1,0 +1,13 @@
+version: '3.7'
+networks:
+  default:
+    driver: bridge
+
+services:
+  sgcc-home-console-fe:
+    container_name: sgcc-home-console-fe
+    image: harbor-jh.bs58i.baishancdnx.com/frontend/sgcc-home-console-fe
+    ports:
+      - 8301:80
+    environment: 
+      API_URL: 'http://homev5.test.nodevops.cn'

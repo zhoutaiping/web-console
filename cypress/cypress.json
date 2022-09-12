@@ -1,0 +1,9 @@
+{
+  "baseUrl": "http://yundunv6.test.nodevops.cn",
+  "video": false,
+  "chromeWebSecurity": false,
+  "viewportWidth": 1400,
+  "viewportHeight": 1200,
+  "projectId": "s47a14",
+  "testFiles": "**/*.spec.js"
+}

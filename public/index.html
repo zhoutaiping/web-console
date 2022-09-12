@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>控制台</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1300,initial-scale=0.3" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="fragment" content="!" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1413441_8dej98cl1dv.css" />
+    <script src="https://gw.alipayobjects.com/os/lib/antv/g2/3.4.10/dist/g2.min.js"></script>
+    <style>#preloadingAnimation{position:fixed;left:0;top:0;height:100%;width:100%;background:#ffffff;user-select:none;z-index: 9999;overflow: hidden}.lds-roller{display:inline-block;position:relative;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;}.lds-roller div{animation:lds-roller 1.2s cubic-bezier(0.5,0,0.5,1) infinite;transform-origin:32px 32px;}.lds-roller div:after{content:" ";display:block;position:absolute;width:6px;height:6px;border-radius:50%;background:#1890ff;margin:-3px 0 0 -3px;}.lds-roller div:nth-child(1){animation-delay:-0.036s;}.lds-roller div:nth-child(1):after{top:50px;left:50px;}.lds-roller div:nth-child(2){animation-delay:-0.072s;}.lds-roller div:nth-child(2):after{top:54px;left:45px;}.lds-roller div:nth-child(3){animation-delay:-0.108s;}.lds-roller div:nth-child(3):after{top:57px;left:39px;}.lds-roller div:nth-child(4){animation-delay:-0.144s;}.lds-roller div:nth-child(4):after{top:58px;left:32px;}.lds-roller div:nth-child(5){animation-delay:-0.18s;}.lds-roller div:nth-child(5):after{top:57px;left:25px;}.lds-roller div:nth-child(6){animation-delay:-0.216s;}.lds-roller div:nth-child(6):after{top:54px;left:19px;}.lds-roller div:nth-child(7){animation-delay:-0.252s;}.lds-roller div:nth-child(7):after{top:50px;left:14px;}.lds-roller div:nth-child(8){animation-delay:-0.288s;}.lds-roller div:nth-child(8):after{top:45px;left:10px;}#preloadingAnimation .load-tips{color: #1890ff;font-size:2rem;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-top:80px;text-align:center;width:400px;height:64px;}  @keyframes lds-roller{0%{transform:rotate(0deg);} 100%{transform:rotate(360deg);}}</style>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="preloadingAnimation"><div class=lds-roller><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+    </div>
+    <script>
+      window.onload = function() {
+        const a = document.getElementById('callBtn')
+        if (a) {
+          a.onclick = function() {
+            lxb.call(document.getElementById('telInput'))
+          }
+        }
+      }
+    </script>
+    <!-- 美洽 -->
+    <script type="text/javascript">
+      ;(function(m, ei, q, i, a, j, s) {
+        m[i] =
+          m[i] ||
+          function() {
+            ;(m[i].a = m[i].a || []).push(arguments)
+          }
+        ;(j = ei.createElement(q)), (s = ei.getElementsByTagName(q)[0])
+        j.async = true
+        j.charset = 'UTF-8'
+        j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t'
+        s.parentNode.insertBefore(j, s)
+      })(window, document, 'script', '_MEIQIA')
+      _MEIQIA('entId', 151927) // 企业ID
+      // 在这里开启无按钮模式（常规情况下，需要紧跟在美洽嵌入代码之后）
+      _MEIQIA('withoutBtn')
+      _MEIQIA('rejectInvitation')
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1409 @@
+[
+	{
+		"moduleName": "cloud-speed",
+		"moduleTitle": "WEB安全加速",
+		"childs": [
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-list/index",
+				"path": "cloud-speed/websiteList",
+				"name": "cloud-speed.router.websiteList",
+				"title": "网站列表",
+				"apis": [
+					"GET V4/Web.Domain.list",
+					"GET V4/Web.Domain.list.export",
+					"PUT V4/web.domain.set.save",
+					"GET V4/web.domain.set.get",
+					"GET V4/web.domain.group.list",
+					"GET sso/V4/getCertificationInfo",
+					"GET V4/Web.Domain.check.cname.use.yundun",
+					"POST V4/Tjkd.plus.domain.change.protect.status",
+					"POST V4/Web.Domain.change.node",
+					"DELETE V4/Web.Domain.remove"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-group/index",
+				"path": "cloud-speed/websiteGroup",
+				"name": "cloud-speed.router.businessList__websiteGroup",
+				"title": "分组管理",
+				"apis": [
+					"GET V4/web.domain.group.list",
+					"PUT V4/Web.Domain.DashBoard.saveCache",
+					"POST V4/web.domain.group.del"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-list/pages/batch-add",
+				"path": "cloud-speed/batch-add",
+				"name": "cloud-speed.router.batch-add",
+				"title": "批量添加网站",
+				"apis": [
+					"POST V4/plan.get.meal_flag",
+					"POST V4/Web.Domain.batch.domain.add"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-list/pages/batch-delete",
+				"path": "cloud-speed/batch-delete",
+				"name": "cloud-speed.router.batch-delete",
+				"title": "批量删除网站",
+				"apis": [
+					"DELETE V4/Web.Domain.remove"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-list/pages/batch-setting",
+				"path": "cloud-speed/websiteList/batch-setting",
+				"name": "cloud-speed.router.websiteList__batch-setting",
+				"title": "批量配置",
+				"apis": [
+					"GET V4/web.domain.group.list",
+					"GET V4/web.domain.list.short",
+					"POST V4/Web.Domain.batch.set.update"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-list/console/console-tab-backsource/index",
+				"path": "cloud-speed/backsource",
+				"name": "cloud-speed.router.websiteList__console__backsource",
+				"title": "回源配置",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-list/console/console-tab-perform/index",
+				"path": "cloud-speed/perform",
+				"name": "cloud-speed.router.websiteList__console__perform",
+				"title": "性能优化",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-list/console/console-tab-pages/index",
+				"path": "cloud-speed/pages",
+				"name": "cloud-speed.router.websiteList__console__pages",
+				"title": "高级配置",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-list/console/ApplicationSecurity/index",
+				"path": "cloud-speed/applicationSecurity",
+				"name": "cloud-speed.router.websiteList__applicationSecurity",
+				"title": "应用安全",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-list/console/ContentSecurity/index",
+				"path": "cloud-speed/contentSecurity",
+				"name": "cloud-speed.router.websiteList__contentSecurity",
+				"title": "内容安全",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-list/console/BusinessSecurity/index",
+				"path": "cloud-speed/businessSecurity",
+				"name": "cloud-speed.router.websiteList__businessSecurity",
+				"title": "业务安全",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-list/console/Waf/index",
+				"path": "cloud-speed/waf",
+				"name": "cloud-speed.router.websiteList__waf",
+				"title": "精准访问控制",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-list/console/Waf/Detail",
+				"path": "cloud-speed/waf/:groupId",
+				"name": "cloud-speed.router.websiteList__wafDetail",
+				"title": "精准访问控制",
+				"apis": [
+					"GET V4/firewall.policyGroup.get_domainid"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-list/console/NetworkSecurity/index",
+				"path": "cloud-speed/networkSecurity",
+				"name": "cloud-speed.router.websiteList__networkSecurity",
+				"title": "网络安全",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/statistics-report/tab-wide-flow-range",
+				"path": "cloud-speed/wideFlowRange",
+				"name": "cloud-speed.router.statisticsReport__wideFlowRange",
+				"title": "流量带宽",
+				"apis": [
+					"POST V4/stati.data.get",
+					"POST V4/stati.data.get"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/statistics-report/tab-access-analysis",
+				"path": "cloud-speed/accessAnalysis",
+				"name": "cloud-speed.router.statisticsReport__accessAnalysis",
+				"title": "访问分析",
+				"apis": [
+					"POST V4/stati.data.get",
+					"POST V4/stati.data.get",
+					"POST V4/stati.data.get"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/statistics-report/tab-distribution-request",
+				"path": "cloud-speed/distributionRequest",
+				"name": "cloud-speed.router.statisticsReport__distributionRequest",
+				"title": "请求分布",
+				"apis": [
+					"POST V4/stati.data.get",
+					"POST V4/stati.data.get"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/statistics-report/tab-status-code-analysis",
+				"path": "cloud-speed/statusCodeAnalysis",
+				"name": "cloud-speed.router.statisticsReport__statusCodeAnalysis",
+				"title": "状态码分析",
+				"apis": [
+					"POST V4/stati.data.get"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/statistics-report/tab-hotspot-analysis",
+				"path": "cloud-speed/hotspotAnalysis",
+				"name": "cloud-speed.router.statisticsReport__hotspotAnalysis",
+				"title": "热点分析",
+				"apis": [
+					"POST V4/stati.data.get",
+					"POST V4/stati.data.get"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/red-guard/views/menace-analyze/tab/WAFAttack",
+				"path": "cloud-speed/WAFAttack",
+				"name": "cloud-speed.router.menaceAnalyze__WAFAttack",
+				"title": "漏洞入侵分析",
+				"apis": [
+					"POST V4/stati.data.get"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/red-guard/views/menace-analyze/tab/CCAttack",
+				"path": "cloud-speed/CCAttack",
+				"name": "cloud-speed.router.menaceAnalyze__CCAttack",
+				"title": "CC攻击分析",
+				"apis": [
+					"POST V4/stati.data.get"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/red-guard/views/menace-analyze/tab/AccurateAccessControl",
+				"path": "cloud-speed/AccurateAccessControl",
+				"name": "cloud-speed.router.menaceAnalyze__AccurateAccessControl",
+				"title": "精准访问控制",
+				"apis": [
+					"POST V4/stati.data.get",
+					"GET V4/firewall.policy.get_code"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/red-guard/views/menace-analyze/tab/AccurateAccessControlShow",
+				"path": "cloud-speed/menaceAnalyze/AccurateAccessControl/:id",
+				"name": "cloud-speed.router.menaceAnalyze__AccurateAccessControlId",
+				"title": "精准访问控制",
+				"apis": [
+					"POST V4/stati.data.get",
+					"GET V4/firewall.policy.get_code"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/red-guard/views/menace-analyze/tab/Bot/index",
+				"path": "cloud-speed/Bot",
+				"name": "cloud-speed.router.menaceAnalyze__Bot",
+				"title": "Bot面板",
+				"apis": [
+					"POST V4/stati.data.get"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/red-guard/views/menace-analyze/tab/Bot/KnowDetail",
+				"path": "cloud-speed/Bot/KnowDetail/:id",
+				"name": "cloud-speed.router.menaceAnalyze__BotKnowDetailId",
+				"title": "Bot详情",
+				"apis": [
+					"POST V4/stati.data.get"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/red-guard/views/menace-analyze/tab/Bot/UnknowDetail",
+				"path": "cloud-speed/Bot/UnknowDetail/:id",
+				"name": "cloud-speed.router.menaceAnalyze__BotUnknowDetailIid",
+				"title": "cloud-speed.router.menaceAnalyze__BotUnknowDetailIid",
+				"apis": [
+					"POST V4/stati.data.get"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/website-group/index",
+				"path": "cloud-speed/websiteGroup",
+				"name": "cloud-speed.router.websiteGroup",
+				"title": "分组管理",
+				"apis": [
+					"GET V4/web.domain.group.list",
+					"PUT V4/Web.Domain.DashBoard.saveCache",
+					"POST V4/web.domain.group.del"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/clean-cache/index",
+				"path": "cloud-speed/cleanCache",
+				"name": "cloud-speed.router.cleanCache",
+				"title": "清理缓存",
+				"apis": [
+					"PUT V4/Web.Domain.DashBoard.saveCache",
+					"GET V4/Web.Domain.DashBoard.getCache"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/cache-preheat/index",
+				"path": "cloud-speed/cachePreheat",
+				"name": "cloud-speed.router.cachePreheat",
+				"title": "缓存预热",
+				"apis": [
+					"GET V4/Web.Domain.DashBoard.get.preheat.cache.list",
+					"POST V4/Web.Domain.DashBoard.save.preheat.cache"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/task-list/batch",
+				"path": "cloud-speed/operateLogBatch",
+				"name": "cloud-speed.router.taskList__operateLogBatch",
+				"title": "批量任务",
+				"apis": [
+					"GET agw/batch/console/v1/task/list"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/task-list/detail",
+				"path": "cloud-speed/operateLogBatchDetail",
+				"name": "cloud-speed.router.taskList__operateLogBatch__Detail",
+				"title": "任务详情",
+				"apis": [
+					"GET agw/batch/console/v1/subtask/list"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/clean-cache-log/index",
+				"path": "cloud-speed/cleanCacheLog",
+				"name": "cloud-speed.router.taskList__cleanCacheLog",
+				"title": "清理缓存",
+				"apis": [
+					"GET V4/Web.Domain.DashBoard.cache.clean.list"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/clean-cache-log/detail",
+				"path": "cloud-speed/cleanCacheLogDetail",
+				"name": "cloud-speed.router.taskList__cleanCacheLog__Detail",
+				"title": "任务详情",
+				"apis": [
+					"GET V4/Web.Domain.DashBoard.cache.clean.detail"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/cache-preheat-log/index",
+				"path": "cloud-speed/cachePreheatLog",
+				"name": "cloud-speed.router.taskList__cachePreheatLog",
+				"title": "预热刷新",
+				"apis": [
+					"GET V4/Web.Domain.DashBoard.get.preheat.cache.list"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/cache-preheat-log/detail",
+				"path": "cloud-speed/cachePreheatLogDetail",
+				"name": "cloud-speed.router.taskList__cachePreheatLog__Detail",
+				"title": "任务详情",
+				"apis": [
+					"GET V4/Web.Domain.DashBoard.get.preheat.cache.detail"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/operate-log/list",
+				"path": "cloud-speed/list",
+				"name": "cloud-speed.router.operateLog__list",
+				"title": "操作记录",
+				"apis": [
+					"GET agw/oplog/console/user/oplog/list"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/operate-log/batch",
+				"path": "cloud-speed/batch",
+				"name": "cloud-speed.router.operateLog__batch",
+				"title": "批量操作记录",
+				"apis": [
+					"GET V4/Web.Domain.batch.log.search",
+					"GET V4/Web.Domain.batch.log.export"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/certificateList/index",
+				"path": "cloud-speed/certificateList",
+				"name": "cloud-speed.router.certificateList",
+				"title": "证书管理",
+				"apis": [
+					"GET V4/Web.ca.self.list",
+					"DELETE V4/Web.ca.self.del",
+					"POST V4/Web.ca.self.editcaname",
+					"POST V4/Web.ca.batch.operat",
+					"POST V4/Web.ca.batch.operat",
+					"GET V4/Web.ca.self.export"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/config-templates/index",
+				"path": "cloud-speed/configTemplates",
+				"name": "cloud-speed.router.configTemplates",
+				"title": "配置模板",
+				"apis": [
+					"GET V4/cdntpl.list",
+					"POST V4/cdntpl.delete"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/config-templates/Detail",
+				"path": "cloud-speed/configTemplates/create",
+				"name": "cloud-speed.router.configTemplates__create",
+				"title": "新增配置模板",
+				"apis": [
+					"POST V4/cdntpl.info",
+					"POST V4/cdntpl.save"
+				]
+			},
+			{
+				"moduleName": "cloud-speed",
+				"moduleTitle": "WEB安全加速",
+				"filepath": "src/console/cloud-speed/views/config-templates/Detail",
+				"path": "cloud-speed/configTemplates/edit/:id",
+				"name": "cloud-speed.router.configTemplates__edit__id",
+				"title": "修改配置模板",
+				"apis": [
+					"POST V4/cdntpl.info",
+					"POST V4/cdntpl.save"
+				]
+			}
+		]
+	},
+	{
+		"moduleName": "cloud-resolving",
+		"moduleTitle": "DNS安全加速",
+		"childs": [
+			{
+				"moduleName": "cloud-resolving",
+				"moduleTitle": "DNS安全加速",
+				"filepath": "src/console/cloud-resolving/views/domain-list/index",
+				"path": "cloud-resolving/domainList",
+				"name": "cloud-resolving.router.domainList",
+				"title": "域名列表",
+				"apis": [
+					"GET V4/CloudDns.Domain.DnsDomain.list",
+					"POST V4/CloudDns.Domain.DnsDomain.batchExport",
+					"POST V4/CloudDns.Domain.DnsDomain.batchDelete",
+					"GET V4/cloud.dns.domain.group.all.list"
+				]
+			},
+			{
+				"moduleName": "cloud-resolving",
+				"moduleTitle": "DNS安全加速",
+				"filepath": "src/console/cloud-resolving/views/domain-list/console/index",
+				"path": "cloud-resolving/domainList/console/:id/:member_id/record",
+				"name": "cloud-resolving.router.domainList__console__record",
+				"title": "控制台",
+				"apis": [
+					"GET V4/CloudDns.DomainRecords.list",
+					"POST V4/CloudDns.DomainRecords.add",
+					"POST V4/CloudDns.DomainRecords.edit",
+					"POST V4/CloudDns.DomainRecords.batchOpen",
+					"POST V4/CloudDns.DomainRecords.batchPause",
+					"POST V4/CloudDns.DomainRecords.batchDelete",
+					"POST V4/CloudDns.DomainRecords.delete",
+					"GET V4/CloudDns.DomainRecords.importRecord2CloudSpeed",
+					"POST V4/CloudDns.DomainRecords.edit.remark",
+					"GET V4/CloudDns.DomainRecords.getDomainDns",
+					"POST V4/CloudDns.Member.GroupList"
+				]
+			},
+			{
+				"moduleName": "cloud-resolving",
+				"moduleTitle": "DNS安全加速",
+				"filepath": "src/console/cloud-resolving/views/domain-list/batch-domain-save",
+				"path": "cloud-resolving/domainList/batch-domain-save",
+				"name": "cloud-resolving.router.domainList__batch-domain-save",
+				"title": "批量添加域名",
+				"apis": [
+					"POST V4/CloudDns.Domain.DnsDomain.batchAdd"
+				]
+			},
+			{
+				"moduleName": "cloud-resolving",
+				"moduleTitle": "DNS安全加速",
+				"filepath": "src/console/cloud-resolving/views/domain-list/console/batch",
+				"path": "cloud-resolving/domainList/batch-record-save",
+				"name": "cloud-resolving.router.domainList__batch-record-save",
+				"title": "cloud-resolving.router.domainList__batch-record-save",
+				"apis": [
+					"POST V4/CloudDns.DomainRecords.batchAdd"
+				]
+			},
+			{
+				"moduleName": "cloud-resolving",
+				"moduleTitle": "DNS安全加速",
+				"filepath": "src/console/cloud-resolving/views/domain-list/importLog",
+				"path": "cloud-resolving/domainList/importLog",
+				"name": "cloud-resolving.router.domainList__importLog",
+				"title": "导入记录",
+				"apis": [
+					"UPLOAD V4/CloudDns.DomainRecords.batchImport"
+				]
+			},
+			{
+				"moduleName": "cloud-resolving",
+				"moduleTitle": "DNS安全加速",
+				"filepath": "src/console/cloud-resolving/views/domain-list/statistics",
+				"path": "cloud-resolving/domainList/statistics",
+				"name": "cloud-resolving.router.domainList__statistics__resolvingDomain",
+				"title": "统计",
+				"apis": [
+					"GET V4/CloudDns.Domain.DnsDomain.DnsStat"
+				]
+			},
+			{
+				"moduleName": "cloud-resolving",
+				"moduleTitle": "DNS安全加速",
+				"filepath": "src/console/cloud-resolving/views/meal/index",
+				"path": "cloud-resolving/mealList",
+				"name": "cloud-resolving.router.mealList",
+				"title": "套餐列表",
+				"apis": [
+					"GET V4/cloud.dns.package.list"
+				]
+			},
+			{
+				"moduleName": "cloud-resolving",
+				"moduleTitle": "DNS安全加速",
+				"filepath": "src/console/cloud-resolving/views/website-group/index",
+				"path": "cloud-resolving/domainGroup",
+				"name": "cloud-resolving.router.domainGroup",
+				"title": "分组管理",
+				"apis": [
+					"GET V4/cloud.dns.domain.group.list",
+					"POST V4/cloud.dns.domain.group.del"
+				]
+			},
+			{
+				"moduleName": "cloud-resolving",
+				"moduleTitle": "DNS安全加速",
+				"filepath": "src/console/cloud-resolving/views/job-list/index",
+				"path": "cloud-resolving/jobList",
+				"name": "cloud-resolving.router.jobList",
+				"title": "任务列表",
+				"apis": [
+					"GET V4/CloudDns.DomainRecords.batchList"
+				]
+			},
+			{
+				"moduleName": "cloud-resolving",
+				"moduleTitle": "DNS安全加速",
+				"filepath": "src/console/cloud-resolving/views/job-list/detail",
+				"path": "cloud-resolving/jobList/detail-list",
+				"name": "cloud-resolving.router.jobList__detail-list",
+				"title": "任务详情",
+				"apis": [
+					"GET V4/CloudDns.DomainRecords.batchDetail"
+				]
+			},
+			{
+				"moduleName": "cloud-resolving",
+				"moduleTitle": "DNS安全加速",
+				"filepath": "src/console/cloud-resolving/views/operate-log/index",
+				"path": "cloud-resolving/cloud-resolving/operateLog",
+				"name": "cloud-resolving.router.operateLog",
+				"title": "操作记录",
+				"apis": [
+					"GET agw/oplog/console/user/oplog/list"
+				]
+			}
+		]
+	},
+	{
+		"moduleName": "scan-plus",
+		"moduleTitle": "扫描观测",
+		"childs": [
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/propertys/index",
+				"path": "scan-plus/propertys",
+				"name": "scan-plus.router.propertys",
+				"title": "资产列表",
+				"apis": [
+					"GET V4/smgc.property.list",
+					"POST V4/smgc.property.info",
+					"DELETE V4/smgc.property.del"
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/content-safe/Event",
+				"path": "scan-plus/content-safe-event",
+				"name": "scan-plus.router.propertys__id__content-safe-event",
+				"title": "资产详情",
+				"apis": [
+					"GET V4/shield.risk.log.list",
+					"POST V4/shield.risk.save.confirm.status"
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/usability-monitor/List",
+				"path": "scan-plus/usability-monitor",
+				"name": "scan-plus.router.propertys__id__usability-monitor",
+				"title": "资产详情",
+				"apis": [
+					"GET V4/cloud.monitor.task.list",
+					"GET V4/smgc.property.info",
+					"POST V4/cloud.monitor.task.enable",
+					"POST V4/cloud.monitor.task.disable",
+					"POST V4/cloud.monitor.task."
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/dns-monitor/components/CardTableEvents",
+				"path": "scan-plus/dns-monitor-event",
+				"name": "scan-plus.router.propertys__id__dns-monitor-event",
+				"title": "资产详情",
+				"apis": [
+					"GET V4/dns.hijack.event.list"
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/dns-monitor/List",
+				"path": "scan-plus/dns-monitor",
+				"name": "scan-plus.router.propertys__id__dns-monitor",
+				"title": "资产详情",
+				"apis": [
+					"GET V4/dns.hijack.task.list",
+					"GET V4/smgc.property.info",
+					"POST V4/dns.hijack.task."
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/usability-monitor/Event",
+				"path": "scan-plus/usability-monitor-event",
+				"name": "scan-plus.router.propertys__id__usability-monitor-event",
+				"title": "资产详情",
+				"apis": [
+					"GET V4/cloud.monitor.event.list"
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/scan-web/Setting",
+				"path": "scan-plus/scan-web-setting",
+				"name": "scan-plus.router.propertys__id__scan-web-setting",
+				"title": "资产详情",
+				"apis": [
+					"GET V4/shield.scan.task.list",
+					"PUT V4/shield.cycle.scan.cancel",
+					"POST V4/shield.scan.setting.info"
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/content-safe/List",
+				"path": "scan-plus/list",
+				"name": "scan-plus.router.content-safe__list",
+				"title": "控制台",
+				"apis": [
+					"GET V4/shield.risk.count.list",
+					"POST V4/shield.risk.detection.info",
+					"PUT V4/shield.risk.switch.act",
+					"DELETE V4/shield.risk.task.delete"
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/content-safe/console/index",
+				"path": "scan-plus/console/:id",
+				"name": "scan-plus.router.content-safe__console__id",
+				"title": "控制台",
+				"apis": [
+					"GET V4/shield.risk.setting.info"
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/content-safe/Event",
+				"path": "scan-plus/event",
+				"name": "scan-plus.router.content-safe__event",
+				"title": "控制台",
+				"apis": [
+					"GET V4/shield.risk.log.list",
+					"POST V4/shield.risk.save.confirm.status"
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/usability-monitor/List",
+				"path": "scan-plus/usability-monitor/list",
+				"name": "scan-plus.router.usability-monitor__list",
+				"title": "控制台",
+				"apis": [
+					"GET V4/cloud.monitor.task.list",
+					"GET V4/smgc.property.info",
+					"POST V4/cloud.monitor.task.enable",
+					"POST V4/cloud.monitor.task.disable",
+					"POST V4/cloud.monitor.task."
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/usability-monitor/Event",
+				"path": "scan-plus/usability-monitor/event",
+				"name": "scan-plus.router.usability-monitor__event",
+				"title": "控制台",
+				"apis": [
+					"GET V4/cloud.monitor.event.list"
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/usability-monitor/Detail",
+				"path": "scan-plus/usability-monitor/detail/:id",
+				"name": "scan-plus.router.usability-monitor__detail__id",
+				"title": "控制台",
+				"apis": [
+					"POST V4/statistic.monitor.task.delay.avg",
+					"POST V4/statistic.monitor.task.availability.line"
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/dns-monitor/List",
+				"path": "scan-plus/list",
+				"name": "scan-plus.router.dns-monitor__list",
+				"title": "DNS劫持监控",
+				"apis": [
+					"GET V4/dns.hijack.task.list",
+					"GET V4/smgc.property.info",
+					"POST V4/dns.hijack.task."
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/dns-monitor/Report",
+				"path": "scan-plus/report",
+				"name": "scan-plus.router.dns-monitor__report",
+				"title": "DNS劫持监控",
+				"apis": []
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/scan-web/List",
+				"path": "scan-plus/scan-web/list",
+				"name": "scan-plus.router.scan-web__list",
+				"title": "控制台",
+				"apis": [
+					"GET V4/shield.scan.detail.list",
+					"POST V4/shield.scan.task.again"
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/scan-web/Setting",
+				"path": "scan-plus/scan-web/setting",
+				"name": "scan-plus.router.scan-web__setting",
+				"title": "控制台",
+				"apis": [
+					"GET V4/shield.scan.task.list",
+					"PUT V4/shield.cycle.scan.cancel",
+					"POST V4/shield.scan.setting.info"
+				]
+			},
+			{
+				"moduleName": "scan-plus",
+				"moduleTitle": "扫描观测",
+				"filepath": "src/console/scan-plus/pages/packages/index",
+				"path": "scan-plus/packages",
+				"name": "scan-plus.router.packages",
+				"title": "套餐列表",
+				"apis": [
+					"GET V4/smgc.package.list"
+				]
+			}
+		]
+	},
+	{
+		"moduleName": "taichi-app",
+		"moduleTitle": "安全加速SDK",
+		"childs": [
+			{
+				"moduleName": "taichi-app",
+				"moduleTitle": "安全加速SDK",
+				"filepath": "src/console/taichi-app/views/MealList/index",
+				"path": "taichi-app/meal",
+				"name": "taichi-app.router.meal",
+				"title": "套餐列表",
+				"apis": [
+					"GET V4/tjkd.app.package.list"
+				]
+			},
+			{
+				"moduleName": "taichi-app",
+				"moduleTitle": "安全加速SDK",
+				"filepath": "src/console/taichi-app/views/Business/ApplicationSecurity/index",
+				"path": "taichi-app/applicationSecurity",
+				"name": "taichi-app.router.business__id__applicationSecurity",
+				"title": "控制台",
+				"apis": []
+			},
+			{
+				"moduleName": "taichi-app",
+				"moduleTitle": "安全加速SDK",
+				"filepath": "src/console/taichi-app/views/Business/ApplicationAcceleration",
+				"path": "taichi-app/applicationAcceleration",
+				"name": "taichi-app.router.business__id__applicationAcceleration",
+				"title": "控制台",
+				"apis": []
+			},
+			{
+				"moduleName": "taichi-app",
+				"moduleTitle": "安全加速SDK",
+				"filepath": "src/console/taichi-app/views/Business/BusinessSecurity",
+				"path": "taichi-app/businessSecurity",
+				"name": "taichi-app.router.business__id__BusinessSecurity",
+				"title": "控制台",
+				"apis": []
+			},
+			{
+				"moduleName": "taichi-app",
+				"moduleTitle": "安全加速SDK",
+				"filepath": "src/console/taichi-app/views/Business/NetworkSecurity",
+				"path": "taichi-app/networkSecurity",
+				"name": "taichi-app.router.business__id__NetworkSecurity",
+				"title": "控制台",
+				"apis": []
+			},
+			{
+				"moduleName": "taichi-app",
+				"moduleTitle": "安全加速SDK",
+				"filepath": "src/console/taichi-app/views/MealList/Detail",
+				"path": "taichi-app/meal/:id",
+				"name": "taichi-app.router.meal__id",
+				"title": "管理",
+				"apis": [
+					"GET V4/tjkd.app.domain.list",
+					"DELETE V4/tjkd.app.domain.del"
+				]
+			},
+			{
+				"moduleName": "taichi-app",
+				"moduleTitle": "安全加速SDK",
+				"filepath": "src/console/taichi-app/views/Report/CC/index",
+				"path": "taichi-app/cc",
+				"name": "taichi-app.router.report__cc",
+				"title": "CC攻击统计",
+				"apis": []
+			},
+			{
+				"moduleName": "taichi-app",
+				"moduleTitle": "安全加速SDK",
+				"filepath": "src/console/taichi-app/views/Report/Visit/index",
+				"path": "taichi-app/visit",
+				"name": "taichi-app.router.report__visit",
+				"title": "访问分析",
+				"apis": [
+					"GET V4/tjkd.app.api.get.report.getSetting",
+					"GET V4/tjkd.app.package.ip.list",
+					"GET V4/tjkd.app.package.port.list",
+					"GET V4/statistic.tjkd.app.ip.status.line",
+					"GET V4/statistic.tjkd.app.ip.risk.control.status.line",
+					"GET V4/statistic.tjkd.app.game.session.time",
+					"GET V4/statistic.tjkd.app.game.visit.line",
+					"GET V4/statistic.tjkd.app.visit.session.time.pre",
+					"GET V4/statistic.tjkd.app.isp.top",
+					"GET V4/statistic.tjkd.app.visit.platform",
+					"GET V4/statistic.tjkd.app.visit.avg.session.time",
+					"GET V4/statistic.tjkd.app.visit.start.app.times",
+					"GET V4/statistic.tjkd.app.start.times",
+					"GET V4/statistic.tjkd.app.visit.line",
+					"GET V4/statistic.tjkd.app.ip.visit.data",
+					"GET V4/statistic.tjkd.app.block.risk.connect.line",
+					"GET V4/statistic.tjkd.app.block.risk.device.line",
+					"GET V4/statistic.tjkd.app.visit.Province.top"
+				]
+			},
+			{
+				"moduleName": "taichi-app",
+				"moduleTitle": "安全加速SDK",
+				"filepath": "src/console/taichi-app/views/Report/Waf/index",
+				"path": "taichi-app/waf",
+				"name": "taichi-app.router.report__waf",
+				"title": "业务安全分析",
+				"apis": []
+			},
+			{
+				"moduleName": "taichi-app",
+				"moduleTitle": "安全加速SDK",
+				"filepath": "src/console/taichi-app/views/Report/Waf/Detail",
+				"path": "taichi-app/waf/:id",
+				"name": "taichi-app.router.report__waf__id",
+				"title": "业务安全分析",
+				"apis": [
+					"GET V4/firewall.report.sdk.package.block.details"
+				]
+			},
+			{
+				"moduleName": "taichi-app",
+				"moduleTitle": "安全加速SDK",
+				"filepath": "src/console/taichi-app/views/Logs/sdk",
+				"path": "taichi-app/sdk",
+				"name": "taichi-app.router.logs__sdk",
+				"title": "SDK",
+				"apis": [
+					"GET V4/tjkd.app.op.log.list"
+				]
+			},
+			{
+				"moduleName": "taichi-app",
+				"moduleTitle": "安全加速SDK",
+				"filepath": "src/console/taichi-app/views/Logs/accurateAccessControl",
+				"path": "taichi-app/accurateAccessControl",
+				"name": "taichi-app.router.logs__accurateAccessControl",
+				"title": "精准访问控制",
+				"apis": [
+					"POST V4/firewall.oplog.export",
+					"GET V4/firewall.oplog?bank=firewall",
+					"GET V4/firewall.policy.get_code"
+				]
+			}
+		]
+	},
+	{
+		"moduleName": "service-report",
+		"moduleTitle": "服务报告",
+		"childs": [
+			{
+				"moduleName": "service-report",
+				"moduleTitle": "服务报告",
+				"filepath": "src/console/service-report/views/report/list",
+				"path": "service-report/report/list",
+				"name": "service-report.router.reportList",
+				"title": "报告列表",
+				"apis": [
+					"POST V4/member.report.getReportList",
+					"POST V4/member.report.addReport"
+				]
+			},
+			{
+				"moduleName": "service-report",
+				"moduleTitle": "服务报告",
+				"filepath": "src/console/service-report/views/task/list",
+				"path": "service-report/task/list",
+				"name": "service-report.router.taskList",
+				"title": "生成计划",
+				"apis": [
+					"POST V4/member.report.getReportList",
+					"POST V4/member.report.editReport",
+					"POST V4/member.report.addReport",
+					"POST V4/member.report.delReport",
+					"POST V4/member.report.getPlanDetail",
+					"POST V4/member.report.getPlanDetail"
+				]
+			}
+		]
+	},
+	{
+		"moduleName": "finance-center",
+		"moduleTitle": "账务管理",
+		"childs": [
+			{
+				"moduleName": "finance-center",
+				"moduleTitle": "账务管理",
+				"filepath": "src/console/finance-center/views/RechargeList/RechargeList",
+				"path": "finance-center/rechargeList",
+				"name": "finance-center.router.rechargeList",
+				"title": "充值列表",
+				"apis": [
+					"GET V4/finance.recharge.rechargeList"
+				]
+			},
+			{
+				"moduleName": "finance-center",
+				"moduleTitle": "账务管理",
+				"filepath": "src/console/finance-center/views/InvoiceOrder/index",
+				"path": "finance-center/invoiceOrder",
+				"name": "finance-center.router.invoiceOrder",
+				"title": "订单列表",
+				"apis": [
+					"GET V4/order.order_list",
+					"POST V4/order.order_verify",
+					"POST V4/order.order_cancle"
+				]
+			},
+			{
+				"moduleName": "finance-center",
+				"moduleTitle": "账务管理",
+				"filepath": "src/console/finance-center/views/InvoiceOrder/detail",
+				"path": "finance-center/invoiceOrder/invoiceOrderDetail/:id",
+				"name": "finance-center.router.invoiceOrder__id",
+				"title": "订单详情",
+				"apis": [
+					"GET V4/order.order_list"
+				]
+			},
+			{
+				"moduleName": "finance-center",
+				"moduleTitle": "账务管理",
+				"filepath": "src/console/finance-center/views/OrderList/Pay",
+				"path": "finance-center/orderList/pay",
+				"name": "finance-center.router.orderList__pay",
+				"title": "支付页面",
+				"apis": []
+			},
+			{
+				"moduleName": "finance-center",
+				"moduleTitle": "账务管理",
+				"filepath": "src/console/finance-center/views/OrderList/OrderDetail",
+				"path": "finance-center/orderList/orderDetail/:id",
+				"name": "finance-center.router.orderList__id",
+				"title": "账单详情",
+				"apis": []
+			},
+			{
+				"moduleName": "finance-center",
+				"moduleTitle": "账务管理",
+				"filepath": "src/console/finance-center/views/InvoiceList/InvoiceList",
+				"path": "finance-center/invoiceList",
+				"name": "finance-center.router.invoiceList",
+				"title": "发票管理",
+				"apis": []
+			},
+			{
+				"moduleName": "finance-center",
+				"moduleTitle": "账务管理",
+				"filepath": "src/console/finance-center/views/CouponList/CouponList",
+				"path": "finance-center/couponList",
+				"name": "finance-center.router.couponList",
+				"title": "优惠码管理",
+				"apis": []
+			}
+		]
+	},
+	{
+		"moduleName": "cloud-wall",
+		"moduleTitle": "TCP安全加速",
+		"childs": [
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/protectionRules/configLayer7Rule",
+				"path": "cloud-wall/configLayer7Rule",
+				"name": "cloud-wall.router.protectionRules__configLayer7Rule",
+				"title": "防护规则",
+				"apis": [
+					"GET V4/Tjkd.plus.domain.list",
+					"POST V4/Tjkd.plus.domain.add",
+					"GET V4/Tjkd.plus.package.all",
+					"POST V4/Tjkd.Web.Domain.protect",
+					"POST V4/Web.Domain.change.node",
+					"DELETE V4/Tjkd.plus.domain.del"
+				]
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/protectionRules/configLayer7RuleShow",
+				"path": "cloud-wall/configLayer7Rule/:id",
+				"name": "cloud-wall.router.protectionRules__configLayer7Rule__id",
+				"title": "控制台",
+				"apis": [
+					"GET V4/Web.Domain.Info"
+				]
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/protectionRules/configLayer4Rule",
+				"path": "cloud-wall/configLayer4Rule",
+				"name": "cloud-wall.router.protectionRules__configLayer4Rule",
+				"title": "防护规则",
+				"apis": [
+					"GET V4/Tjkd.plus.forward.rule.list",
+					"POST V4/Tjkd.plus.forward.rule.batch.info",
+					"GET V4/Tjkd.plus.package.all",
+					"DELETE V4/Tjkd.plus.forward.rule.del"
+				]
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/protectionRules/configLayer4RuleShow",
+				"path": "cloud-wall/configLayer4Rule/:id",
+				"name": "cloud-wall.router.protectionRules__configLayer4Rule__id",
+				"title": "控制台",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/packages/index",
+				"path": "cloud-wall/packages",
+				"name": "cloud-wall.router.packages",
+				"title": "套餐列表",
+				"apis": [
+					"GET V4/Tjkd.plus.package.list",
+					"POST V4/Tjkd.plus.package.change.protect.node"
+				]
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/dataTable/pages/webCCAttack/index",
+				"path": "cloud-wall/webCCAttack",
+				"name": "cloud-wall.router.dataReport__webCCAttack",
+				"title": "统计图表",
+				"apis": [
+					"GET V4/statistic.tjkd.plus.web.cc.top"
+				]
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/dataTable/pages/ddosAttack/index",
+				"path": "cloud-wall/ddosAttack",
+				"name": "cloud-wall.router.dataReport__ddosAttack",
+				"title": "统计图表",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/dataTable/pages/ddosAttack/detail",
+				"path": "cloud-wall/ddosAttack/detail",
+				"name": "cloud-wall.router.dataReport__ddosAttack__detail",
+				"title": "统计图表",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/dataTable/pages/tcpCCAttack/index",
+				"path": "cloud-wall/tcpCCAttack",
+				"name": "cloud-wall.router.dataReport__tcpCCAttack",
+				"title": "统计图表",
+				"apis": [
+					"GET V4/statistic.tjkd.plus.tcp.cc.top"
+				]
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/dataTable/pages/tcpTraffic/index",
+				"path": "cloud-wall/tcpTraffic",
+				"name": "cloud-wall.router.dataReport__tcpTraffic",
+				"title": "统计图表",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/dataTable/pages/tcpSession/index",
+				"path": "cloud-wall/tcpSession",
+				"name": "cloud-wall.router.dataReport__tcpSession",
+				"title": "统计图表",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/dataTable/pages/tcpSessionTime/index",
+				"path": "cloud-wall/tcpSessionTime",
+				"name": "cloud-wall.router.dataReport__tcpSessionTime",
+				"title": "统计图表",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/dataTable/pages/tcpDistribution/index",
+				"path": "cloud-wall/tcpDistribution",
+				"name": "cloud-wall.router.dataReport__tcpDistribution",
+				"title": "统计图表",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/dataTable/pages/accurateAccessControl/index",
+				"path": "cloud-wall/accurateAccessControl",
+				"name": "cloud-wall.router.dataReport__accurateAccessControl",
+				"title": "统计图表",
+				"apis": [
+					"GET V4/firewall.report.package.block.list",
+					"GET V4/firewall.policy.get_code"
+				]
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/dataTable/pages/accurateAccessControl/detail",
+				"path": "cloud-wall/accurateAccessControl/:id",
+				"name": "cloud-wall.router.dataReport__accurateAccessControl__id",
+				"title": "统计图表",
+				"apis": [
+					"GET V4/firewall.report.package.block.details",
+					"GET V4/firewall.policy.get_code"
+				]
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/logs/ddos",
+				"path": "cloud-wall/ddos",
+				"name": "cloud-wall.router.logs__ddos",
+				"title": "操作记录",
+				"apis": []
+			},
+			{
+				"moduleName": "cloud-wall",
+				"moduleTitle": "TCP安全加速",
+				"filepath": "src/console/cloud-wall/page/logs/accurateAccessControl",
+				"path": "cloud-wall/accurateAccessControl",
+				"name": "cloud-wall.router.logs__accurateAccessControl",
+				"title": "操作记录",
+				"apis": [
+					"POST V4/firewall.oplog.export",
+					"GET V4/firewall.oplog?bank=firewall",
+					"GET V4/firewall.policy.get_code"
+				]
+			}
+		]
+	},
+	{
+		"moduleName": "message-center",
+		"moduleTitle": "消息中心",
+		"childs": [
+			{
+				"moduleName": "message-center",
+				"moduleTitle": "消息中心",
+				"filepath": "src/console/message-center/views/MessageList/MessageList",
+				"path": "message-center/MessageList",
+				"name": "message-center.router.MessageList",
+				"title": "消息列表",
+				"apis": []
+			},
+			{
+				"moduleName": "message-center",
+				"moduleTitle": "消息中心",
+				"filepath": "src/console/message-center/views/MessageList/Components/detail",
+				"path": "message-center/MessageList/detail/:id",
+				"name": "message-center.router.MessageList__id",
+				"title": "详情",
+				"apis": [
+					"GET V4/messagecenter.getmessageinfo"
+				]
+			},
+			{
+				"moduleName": "message-center",
+				"moduleTitle": "消息中心",
+				"filepath": "src/console/message-center/views/MessageList/NoticeConfig",
+				"path": "message-center/NoticeConfig",
+				"name": "message-center.router.NoticeConfig",
+				"title": "消息通知设置",
+				"apis": []
+			},
+			{
+				"moduleName": "message-center",
+				"moduleTitle": "消息中心",
+				"filepath": "src/console/message-center/views/MessageList/PersonManage",
+				"path": "message-center/PersonManage",
+				"name": "message-center.router.PersonManage",
+				"title": "消息接收人管理",
+				"apis": []
+			}
+		]
+	},
+	{
+		"moduleName": "zero-trust",
+		"moduleTitle": "应用可信访问",
+		"childs": [
+			{
+				"moduleName": "zero-trust",
+				"moduleTitle": "应用可信访问",
+				"filepath": "src/console/zero-trust/views/Applications/index",
+				"path": "zero-trust/applications",
+				"name": "zero-trust.router.applications",
+				"title": "应用管理",
+				"apis": [
+					"GET V4/zero.trust.app.list",
+					"POST V4/zero.trust.app.del"
+				]
+			},
+			{
+				"moduleName": "zero-trust",
+				"moduleTitle": "应用可信访问",
+				"filepath": "src/console/zero-trust/views/IdentityAuth/index",
+				"path": "zero-trust/identityAuth",
+				"name": "zero-trust.router.identityAuth",
+				"title": "分组管理",
+				"apis": [
+					"GET V4/zero.trust.app.access.group.list",
+					"POST V4/zero.trust.app.access.group.del"
+				]
+			},
+			{
+				"moduleName": "zero-trust",
+				"moduleTitle": "应用可信访问",
+				"filepath": "src/console/zero-trust/views/ServiceCertification/SSO/index",
+				"path": "zero-trust/sso",
+				"name": "zero-trust.router.serviceCertification__sso",
+				"title": "单点登陆",
+				"apis": [
+					"GET V4/zero.trust.member.sso.info"
+				]
+			},
+			{
+				"moduleName": "zero-trust",
+				"moduleTitle": "应用可信访问",
+				"filepath": "src/console/zero-trust/views/ServiceCertification/IAM/index",
+				"path": "zero-trust/iam",
+				"name": "zero-trust.router.serviceCertification__iam",
+				"title": "联合身份认证",
+				"apis": []
+			},
+			{
+				"moduleName": "zero-trust",
+				"moduleTitle": "应用可信访问",
+				"filepath": "src/console/zero-trust/views/Logs/Visit",
+				"path": "zero-trust/list",
+				"name": "zero-trust.router.logs__visit",
+				"title": "访问日志",
+				"apis": [
+					"GET V4/Web.Domain.batch.log.search",
+					"GET V4/Web.Domain.batch.log.export"
+				]
+			},
+			{
+				"moduleName": "zero-trust",
+				"moduleTitle": "应用可信访问",
+				"filepath": "src/console/zero-trust/views/Logs/Operate",
+				"path": "zero-trust/batch",
+				"name": "zero-trust.router.logs__operate",
+				"title": "操作日志",
+				"apis": [
+					"GET agw/oplog/console/user/oplog/list"
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,17 @@
+@import './theme/primary.scss';
+@import './variables.scss';
+
+@import './element-ui/adapt.scss';
+@import './element-ui/variables.scss';
+
+@import './modules/form.scss';
+@import './modules/animate.scss';
+@import './modules/page.scss';
+@import './modules/iconfont.scss';
+@import './modules/layout.scss';
+@import './antd/index.scss';
+
+ul, li {
+  padding: 0px;
+  margin: 0px;
+}
